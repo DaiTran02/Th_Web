@@ -1,0 +1,666 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(90deg, #54effa, #fce80b95);
+    overflow-x: hidden;
+}
+
+.myheader > img {
+    width: 100%;
+    height: 35vh;
+    vertical-align: middle;
+}
+
+.nav{
+    background: linear-gradient(30deg, #007bff77, #fc6f0bb4);
+    background-repeat: no-repeat;
+    height: auto;
+    
+}
+.nav > ul{
+    list-style-type: none ;
+}
+@media (min-width: 1500px) {
+    .nav {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+    }
+    .nav > ul {
+        list-style-type: none ;
+        margin: 0;
+        padding: 13px 0;
+        width: 90%;
+        overflow: hidden;
+        text-align: center;
+    }
+    .nav > ul > li{
+        display: inline;
+        width: 60px;
+        margin: 0 2vw;
+    }
+    .search > input {
+        margin-left: 30px;
+        width: 200px;
+    }
+   
+}
+
+.search > * {
+    display: inline;
+}
+
+.search > input {
+    vertical-align: middle;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.search > input:focus   {
+    background-color: white;
+    color: #000000;
+}
+
+.search > button {
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+
+
+.nav ul > li > a{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.6s ease, box-shadow 0.6s ease; 
+    
+}
+
+
+
+.nav ul > li > a:hover {
+    transform: translate(20px, -5px);
+    color: #000000;
+    background-color: #fa861a98;
+    box-shadow: 10px 10px 10px #2fdd1cd6;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.content {
+    display: flex;
+    border: 2px solid gray;
+    margin-top: 2px;   
+    width: 90%;
+    display: flex;
+    justify-content: center; 
+    /* margin-left: 0;
+    margin-right: 50px; */
+}
+
+.left {
+    flex: 2;
+    border-right: 2px solid gray;
+    
+}
+
+.right {
+    flex: 8;
+    
+}
+
+
+
+.phanloai {
+    list-style-type: square;
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+.div1{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin: 10px 30px;
+    padding: 0 0 10px 0;
+
+}
+
+.phanloai a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.phanloai > li {
+    margin: 10px 0;
+}
+
+.phanloai > ul li {
+    margin-left: 30px;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.title{
+    background-color: #f87f29b4;
+    padding: 10px; 
+    margin-top: 2px; 
+    color: black;  
+    border-radius: 10px;
+}
+
+.right > img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+
+.product {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+
+.item {
+    margin: 5px 0px;
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 40px;
+
+}
+
+.item:hover {
+    transition: all 0.8s;
+    transform: translate(5px, -5px);
+    color: #000000;
+    background-color: white;
+    box-shadow: 10px 10px 10px #2fdd1cd6;
+}
+
+
+.item > img{
+    width: 80%;
+    border-radius: 20px;
+    
+}
+
+.item > button {
+    padding: 5px 10px;
+    background:  linear-gradient(45deg, #1963db77, #61f9d6b4);
+    border-radius: 10px;
+    font-size: 100%;
+    font-family: sans-serif;
+    color: rgb(19, 19, 19);
+}
+
+.item > * {
+    margin: 5px 0;
+}
+
+.item > span {
+    color: red;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+
+
+.star {
+    background: orange;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.item > button:hover{
+    background: linear-gradient(45deg, #007bff77, #fc6f0bb4);
+    border-radius: 10px;
+}
+
+.lienhe > h2 {
+    text-align: center;
+    font-size: 250%;
+    margin-top: 10px;
+}
+
+.row-lh {
+    display: flex;
+}
+
+.left-lh {
+    flex: 4;
+    margin-left: 20px;
+}
+
+.right-lh {
+    flex: 4;
+}
+
+.lienhe{
+    background-color: white;
+    padding-top: 20px;
+    width: 100vw;
+    margin-left: -3px;
+}
+
+.form {
+    width: 80%;
+}
+.form > * {
+    display: block;
+}
+
+.form > input, textarea {
+    width: 100%;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    font-size: 15px;
+
+    
+}
+
+.left-lh input:focus-within {
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    background: linear-gradient(30deg, #007bff, #fc6f0bb4);
+    transform: scale(1.01);  
+    box-shadow: 20px 20px 10px #03ddf1a0;
+    font-weight: bold;
+    color: white;
+}
+
+textarea:focus-within {
+    transition: transform 0.8s ease, box-shadow 0.8s ease;
+    background: linear-gradient(30deg, #007bff, #fc6f0bb4);
+    transform: scale(1.01);  
+    box-shadow: 20px 20px 10px #03ddf1a0;
+    color: white;
+    font-weight: bold;
+}
+
+.form > input {
+    height: 30px;
+}
+
+.form > label {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.form > button {
+    float: right;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: inherit;
+    border-radius: 10px; 
+    margin-top: 10px;
+    width: 70px;
+    background-color: #ff6701b2;
+    border-style: none ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    color: #ffffff;
+    text-align: center;
+    
+
+    
+}
+
+button {
+    transition: transform 0.6s ease, box-shadow 0.6s ease; 
+}
+
+button:hover {
+    transform: translate(0px, -5px);
+    color: #000000;
+    background-color: #fa861a98;
+    box-shadow: 10px 10px 10px #2fdd1cd6;
+}
+
+.map {
+    margin-left: 40px;
+    margin-right: -40px;
+    margin-top: 10px;
+}
+
+.footer {
+    margin: 0px -3px;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.thong-tin {
+    padding: 10px 0;
+    background: linear-gradient(30deg, #007bff77, #fc6f0bb4);
+    height: 40px;
+    display: flex;
+}
+
+
+.thong-tin > .phone {
+    flex: 3;
+    display: flex;
+    color: white;
+}
+
+.thong-tin > i{
+    font-size: 30px;
+    padding: 1vh;
+}
+
+.first-line {
+    margin-left: 10vw;
+}
+
+.phone  > * {
+    margin: 0 6px;
+}
+
+.icon {
+    background: linear-gradient(30deg, #0a744677, #901a3ab4);
+    font-size: 30px;
+    padding: 1vh;
+}
+
+.chinh-sach{
+    background: #778899;
+    display: flex;
+    padding-top: 10px;
+    
+}
+
+.chinh-sach > .cs-item {
+    flex: 3;
+    
+}
+.cs-item > strong, hr, p {
+    margin: 20px 0;
+}
+
+.cs-item > strong{
+    font-size: 20px;
+   
+}
+.cs-item > hr {
+    color: white;
+}
+
+.cs-item > p {
+    text-align: justify;
+    width: 80%;
+    font-size: 16px;
+}
+.cs-item > div > div {
+    margin: 5px 0;
+}
+
+
+.text-light{
+    color: white;
+    
+}
+
+
+/* Trang chi tiet san pham */
+.chitietsanpham {
+    margin: 10px 0;
+    display: flex;
+
+}
+
+.chitietsanpham > img {
+    flex: 3;
+    width: 40%;
+}
+
+.chitietsanpham > div{
+    flex: 7;
+    font-size: 20px;
+    line-height: 2;
+    margin-left: 50px;
+}
+
+.chitietsanpham > div > button {
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #1963db77, #61f9d6b4);
+}
+
+.gioithieu {
+    text-align: justify;
+    margin: 10px 10px;
+    font-size: 20px;
+}
+
+.scroll {
+    overflow-y: scroll;
+    height: 500px;
+    overflow-x: hidden;
+    
+}
+
+.form-dangnhap {
+    /* width: 80%; */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+}
+
+.form-dangnhap > * {
+    display: block;
+}
+
+.form-dangnhap label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-dangnhap input[type="text"],
+.form-dangnhap input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước của input */
+}
+.form-dangnhap input[type="checkbox"] {
+    display: inline;
+}
+/* Thiết lập kiểu dáng cho nút đăng nhập */
+.form-dangnhap button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Thiết lập kiểu dáng cho liên kết "Quên mật khẩu" */
+.form-dangnhap > a:first-of-type  {
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+/* Thiết lập kiểu dáng cho phần "Tạo một tài khoản mới" */
+.form-dangnhap hr {
+    margin: 20px 0;
+    display: block;
+}
+  
+/* Kiểu dáng cho nút "Tạo một tài khoản mới" */
+.btn-dangky {
+    display: inline-block;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #007bff77, #fc6f0bb4); /* Màu nền */
+    color: black; /* Màu chữ */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    border-radius: 5px; /* Bo tròn viền */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+    text-align: center;
+}
+  
+  /* Hiệu ứng hover */
+.btn-dangky:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+.btn-dangky-container {
+    text-align: center; /* Canh giữa theo chiều ngang */
+    margin-top: 20px; /* Khoảng cách từ nút trên xuống */
+}
+
+
+.form-dangnhap > a{
+    text-decoration: none;
+}
+
+.form-dangky {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    
+}
+
+.form-dangky label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form-dangky input[type="text"],
+.form-dangky input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-dangky input[type="checkbox"] {
+    margin-bottom: 20px;
+}
+
+.form-dangky button[type="button"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-dangky hr {
+    margin: 20px 0;
+}
+
+.btn-dangnhap-container {
+    text-align: center;
+}
+
+.btn-dangky {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#otp {
+    width: calc(100% - 100px); /* Độ rộng của input, trừ đi kích thước của nút */
+    padding: 10px; /* Khoảng cách bên trong input */
+    margin-right: 10px; /* Khoảng cách phải */
+    border: 1px solid #ccc; /* Viền */
+    border-radius: 5px; /* Bo tròn viền */
+    box-sizing: border-box; /* Tính cả padding và border trong kích thước */
+}
+
+#otp[type="button"] {
+    width: 100px; /* Độ rộng của nút */
+    padding: 10px; /* Khoảng cách bên trong nút */
+    border: none; /* Loại bỏ đường viền */
+    border-radius: 5px; /* Bo tròn viền */
+    background-color: #007bff; /* Màu nền */
+    color: #fff; /* Màu chữ */
+    cursor: pointer; /* Con trỏ khi hover */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+#otp[type="button"]:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+
+.container {
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000000;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 2px solid #000000;
+}
+
+
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.img_giohang {
+    max-width: 100px;
+    height: auto;
+}
+
+.delete-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#btn_thanhtoan{
+    height: 40px;
+    width: 200px;
+    margin: 20px 10px;
+    float: right;
+    border-radius: 20px;
+    background: #54effa;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
